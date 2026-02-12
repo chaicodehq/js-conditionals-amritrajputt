@@ -33,5 +33,5 @@
  * @returns {{ allowed: boolean, message: string }}
  */
 export function canBorrowBook(memberAge, hasValidCard, overdueBooks) {
-  // Your code here
+  if(memberAge < 6 || !hasValidCard || overdueBooks) return {}
 }
